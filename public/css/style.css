@@ -26,8 +26,8 @@ nav {
 
 .logo {
   display: flex;
-  /* justify-content: space-around;
-  align-items: center; */
+  justify-content: first baseline;
+  align-items: flex-start;
   width: 25%;
   color: white;
   font-size: 2rem;
@@ -69,7 +69,11 @@ header {
 /* banniere */
 
 .entete {
+  width: 90%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
 }
 
 .titre {
@@ -83,16 +87,18 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 30%;
-  padding-top: 25%;
 }
 
 .ban p {
+  display: flex;
+  justify-content: center;
   color: rgb(60, 60, 62);
+  margin-bottom: 5%;
 }
 
 .visit {
   margin-right: 5%;
+  margin-right: 100%;
 }
 
 & span {
@@ -105,36 +111,43 @@ header {
   margin-left: 31%;
   border-radius: 25px;
   border: none;
-  margin-top: 2%;
   background-color: rgb(105, 90, 166);
   color: white;
 }
 
 .man {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
-.pic {
+.contenair {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pic img {
+  width: 40%;
   display: flex;
   justify-content: center;
-  margin-left: 10%;
-  height: 280px;
-  width: 280px;
+  align-items: flex-start;
+  height: 260px;
+  width: 260px;
 }
 
 .texte2 {
-  display: block;
+  display: flex;
   flex-direction: column;
-  width: 70%;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  margin-top: 10%;
 }
 
 .about {
   font-size: xx-large;
   font-weight: bolder;
-  color: rgb(105, 90, 166) !important;
+  color: rgb(105, 90, 166);
 }
 
 .cv {
