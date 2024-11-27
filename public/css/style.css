@@ -172,6 +172,8 @@ header {
   margin-bottom: 10%;
 }
 
+/* services */
+
 .apresBan {
   display: block;
   text-align: center;
@@ -212,4 +214,67 @@ header {
   font-size: xx-large;
   font-weight: bolder;
   color: rgb(105, 90, 166);
+}
+
+/* portfolio */
+
+.apresBan2 {
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.imagesP {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 3%;
+
+  & img {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+.apresBan3 {
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.grandeD {
+  display: flex;
+  width: 100%;
+}
+
+.moto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 28%;
+  & img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.camion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 28%;
+  & img {
+    height: 60px;
+    width: 60px;
+  }
+}
+.fusee {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 28%;
+  & img {
+    height: 60px;
+    width: 60px;
+  }
 }
