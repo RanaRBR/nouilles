@@ -249,6 +249,17 @@ header {
   margin-top: 5%;
 }
 
+.mauve {
+  color: rgb(105, 90, 166);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+span {
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+}
 .moto {
   display: flex;
   justify-content: center;
@@ -261,11 +272,7 @@ header {
     width: 60px;
   }
 }
-.mauve {
-  color: rgb(105, 90, 166);
-  font-size: xx-large;
-  font-weight: bolder;
-}
+
 .camion {
   display: flex;
   justify-content: center;
