@@ -306,3 +306,68 @@ span {
   color: white;
   margin-top: 2%;
 }
+
+.hire {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  height: 120px;
+  width: 100%;
+  background-color: rgb(105, 90, 166);
+  margin-top: 5%;
+}
+
+.work {
+  display: block;
+  justify-content: center;
+  width: 50%;
+  & p {
+    color: black;
+  }
+}
+
+#bouton3 {
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 5px;
+  margin-left: 90%;
+}
+
+.apresBan4 {
+  display: block;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.test :last-child {
+  color: rgb(105, 90, 166);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.flexT {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+  & img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  }
+}
+
+.texteF {
+  position: relative;
+  border: 2px solid rgb(200, 203, 208);
+  width: 35%;
+  text-align: start;
+  padding: 3%;
+}
