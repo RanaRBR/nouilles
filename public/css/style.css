@@ -118,6 +118,7 @@ header {
 .man {
   width: 100%;
   display: flex;
+  margin-left: 15%;
 }
 
 .contenair {
@@ -131,8 +132,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 260px;
-  width: 260px;
+  height: 360px;
+  width: 360px;
+  margin-top: 20%;
 }
 
 .texte2 {
@@ -142,6 +144,8 @@ header {
   align-items: flex-start;
   width: 60%;
   margin-top: 10%;
+  margin-left: 5%;
+  /* text-decoration: none; */
 }
 
 .about {
@@ -163,4 +167,49 @@ header {
   text-align: center;
   list-style: none;
   text-decoration: none;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.apresBan {
+  display: block;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5%;
+
+  & img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.sapin {
+  border: 2px solid rgb(200, 203, 208);
+  padding: 5%;
+
+  & p {
+    color: rgb(105, 90, 166);
+    font-weight: bold;
+  }
+}
+
+.divService {
+  display: block;
+  justify-content: flex-start;
+}
+
+.service {
+  display: block;
+  justify-content: flex-start;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgb(105, 90, 166);
 }
