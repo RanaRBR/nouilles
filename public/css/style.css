@@ -581,54 +581,135 @@ div .couleur {
     height: 40px;
   }
 }
-
-/* animations */
-
-/* .imagesP img {
-  opacity: 1;
-  transition: all: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.imagesP :hover img {
-  opacity: 0.5;
-}
-/* .images { */
-/* position: relative;
-  overflow: hidden;
-  margin-bottom: 5%;
-  margin-top: 5%;
-} */
-
-/* .imagesP ::before {
-  content: "";
-  background-color: rgba(202, 207, 211, 0.534);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0;
+/* 
+.imagesP img {
   width: 100%;
-  transition: 1s;
-}
-
-.imagesP :hover::before {
   height: 100%;
-} */
-
-/* .imagesP {
-  position: relative;
-  overflow: hidden;
+  object-fit: cover;
+  display: block;
 }
 
-.im {
-  width: 100%;
-}
-
-.anim {
+.imgagesP .overlay {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(251, 250, 250, 0.8);
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.anim {
+  color: #685aa5;
+  font-family: "Baloo Da 2";
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+/* Lorsque hover */
+/* .imagesP :hover .overlay {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(181, 182, 191);
-  position: 0.5s;
+  transform: none;
+  z-index: 1;
+} */
+/* 
+.imgPortfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imgPortfolio .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(251, 250, 250, 0.8);
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.txtBleu {
+  color: #685aa5;
+  font-family: "arlonbold";
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+/* Lorsque hover */
+/* .imgPortfolio :hover .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  z-index: 1;
+} */
+
+/* animation Nav Barre */
+/* 
+.navbar {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.navbar a {
+  width: 100%;
+  height: 9px;
+  border-radius: 9px;
+  background: rgb(105, 90, 166);
+  position: absolute;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+a:nth-child(1) {
+  top: 0px;
+}
+
+a:nth-child(2),
+a:nth-child(3) {
+  top: 18px;
+}
+
+a:nth-child(4) {
+  top: 36px;
+}
+
+a:nth-child(4) {
+  top: 45px;
+}
+
+.navbar.open a:nth-child(1),
+.navbar.open a:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.navbar.open a:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.navbar.open a:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.navbar.open a:nth-child(3) {
+  transform: rotate(-90deg);
 } */
