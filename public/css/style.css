@@ -128,7 +128,7 @@ header {
 }
 
 .pic img {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -264,6 +264,7 @@ span {
   font-weight: bolder;
   color: black;
 }
+
 .moto {
   display: flex;
   justify-content: center;
@@ -271,6 +272,7 @@ span {
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
   padding: 2%;
+
   & img {
     height: 60px;
     width: 60px;
@@ -284,11 +286,13 @@ span {
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
   padding: 2%;
+
   & img {
     height: 60px;
     width: 60px;
   }
 }
+
 .fusee {
   display: flex;
   justify-content: center;
@@ -296,6 +300,7 @@ span {
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
   padding: 2%;
+
   & img {
     height: 60px;
     width: 60px;
@@ -310,6 +315,7 @@ span {
   color: white;
   margin-top: 2%;
 }
+
 /* banniere hire me */
 
 .hire {
@@ -327,6 +333,7 @@ span {
   display: block;
   justify-content: center;
   width: 50%;
+
   & p {
     color: black;
     margin-left: 25%;
@@ -385,6 +392,7 @@ span {
   width: 30%;
   text-align: start;
   padding: 3%;
+
   & p {
     font-size: small;
     text-align: left;
@@ -434,6 +442,7 @@ span {
   align-content: center;
   margin-left: 15%;
 }
+
 .cadre {
   display: flex;
   /* justify-content: center; */
@@ -446,6 +455,7 @@ span {
   display: block;
   justify-content: left;
   margin-top: 2%;
+
   span {
     color: rgb(89, 90, 96);
     font-weight: lighter;
@@ -456,6 +466,7 @@ span {
   display: block;
   justify-content: left;
   margin-top: 2%;
+
   span {
     color: rgb(89, 90, 96);
     font-weight: lighter;
@@ -547,7 +558,7 @@ div .couleur {
 #bouton4 {
   height: 40px;
   width: 160px;
-  margin-left: 50%;
+  margin-left: 45%;
   border-radius: 5px;
   border: 2px solid rgb(175, 159, 238);
   color: rgb(125, 107, 197);
@@ -559,28 +570,34 @@ div .couleur {
 
 .last {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 100%;
-  margin-bottom: 2%;
+  margin-top: 5%;
   border-top: 2px solid rgb(226, 227, 235);
 }
-.iconMedia {
+
+.copy {
   display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  width: 80%;
-  & .copy {
-    display: flex;
-    justify-content: flex-start;
-    width: 30%;
-  }
-  & img {
-    display: flex;
-    justify-content: space-between;
-    width: 40px;
-    height: 40px;
-  }
+  /* justify-content: space-evenly; */
+  width: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  gap: 10px;
 }
+.copyright {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+& img {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40px;
+  height: 40px;
+}
+
 /* 
 .imagesP img {
   width: 100%;
@@ -620,8 +637,8 @@ div .couleur {
   transform: none;
   z-index: 1;
 } */
-/* 
-.imgPortfolio img {
+
+/* .imgPortfolio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -648,9 +665,10 @@ div .couleur {
   font-family: "arlonbold";
   font-size: x-large;
   margin-bottom: 5px;
-}
+} */
 
 /* Lorsque hover */
+
 /* .imgPortfolio :hover .overlay {
   top: 0;
   left: 0;
@@ -713,3 +731,204 @@ a:nth-child(4) {
 .navbar.open a:nth-child(3) {
   transform: rotate(-90deg);
 } */
+
+/* animation services */
+
+.sapin {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.6s;
+  .voir {
+    color: black;
+  }
+}
+.carre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: black;
+  transition: top 0.7s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.sapin:hover .layer {
+  top: 0;
+}
+
+.layer p {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+/* animation Portfolio */
+/* 
+#picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(203, 192, 192, 0.8);
+  transform: translate(-50%-50%);
+  transition: 0.2s;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 {
+  color: rgb(105, 90, 166);
+  font-family: "Baloo Da 2";
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+#picture:hover .content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  z-index: 1;
+} */
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.porte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  cursor: pointer;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.content h4 p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%, 50%);
+  width: 350px;
+  height: 350px;
+  background: rgb(136, 165, 220);
+  flex-direction: column;
+  color: rgb(105, 90, 166);
+  clip-path: circle(0% at 50% 50%);
+  transition: all 2s;
+}
+
+box:hover .content {
+  clip-path: circle(100% at 50% 50%);
+}
+
+.box:hover img {
+  /* filter: blur(10px); */
+  transform: scale(1.1);
+}
+
+.content p {
+  margin: 10px 0 0 15px;
+}
+
+/* animation services */
+/* 
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sapin {
+  width: 10rem;
+  height: 10rem;
+  padding: 40px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sapin img {
+  width: 60px;
+  margin: 10px;
+}
+
+.sapin:hover {
+  position: relative;
+  transform: translateY(-15rem);
+}
+
+.layer:hover {
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+p:hover {
+  font-size: small;
+  color: rgb(105, 90, 166);
+  font-weight: bold;
+  top: 11rem;
+} */
+
+/* @media (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+
+  & nav {
+    width: 100%;
+    background-size: contain;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0 auto;
+  }
+}
