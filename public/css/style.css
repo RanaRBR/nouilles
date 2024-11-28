@@ -445,11 +445,21 @@ span {
 .ligne1 {
   display: block;
   justify-content: left;
+  margin-top: 2%;
+  span {
+    color: rgb(89, 90, 96);
+    font-weight: lighter;
+  }
 }
 
-.ligne1 {
+.ligne2 {
   display: block;
   justify-content: left;
+  margin-top: 2%;
+  span {
+    color: rgb(89, 90, 96);
+    font-weight: lighter;
+  }
 }
 
 .left {
@@ -457,9 +467,9 @@ span {
   margin-left: 3%;
 }
 
-.couleur {
-  color: rgb(105, 90, 166);
-  margin-right: 60%;
+div .couleur {
+  color: rgb(125, 107, 197);
+  margin-right: 75%;
   font-weight: lighter;
 }
 
@@ -487,7 +497,7 @@ span {
   width: auto;
   height: auto;
   margin-top: 5%;
-  border-bottom: rgb(229, 230, 237);
+  border-bottom: 2px solid rgb(226, 227, 235);
 }
 
 .logo {
@@ -518,3 +528,18 @@ span {
     color: rgb(78, 71, 71);
   }
 }
+
+#message {
+  height: 150px;
+  width: 700px;
+  margin-left: 30%;
+  margin-top: 3%;
+  color: rgb(89, 90, 96);
+  padding: 1%;
+  font-family: "Baloo Da 2";
+  font-size: large;
+}
+
+/* .area {
+  border-color: 3px solid rgb(24, 43, 150);
+} */
