@@ -325,6 +325,7 @@ span {
   width: 50%;
   & p {
     color: black;
+    margin-left: 25%;
   }
 }
 
@@ -353,32 +354,43 @@ span {
 }
 
 .flexT {
-  position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 5%;
   gap: 10%;
+
   & img {
     position: absolute;
     height: 90px;
     width: 90px;
     border-radius: 50%;
+    margin-left: -18%;
+    margin-top: 2%;
   }
 }
 
 .texteF {
-  position: relative;
   height: 220px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
   border: 2px solid rgb(200, 203, 208);
   width: 30%;
   text-align: start;
   padding: 3%;
   & p {
     font-size: small;
-    text-align: center;
+    text-align: left;
     padding-bottom: 3%;
   }
+}
+
+.prenom {
+  text-align: left;
+  color: rgb(105, 90, 166);
 }
 
 /* blog */
@@ -386,7 +398,7 @@ span {
 .apresBan5 {
   display: block;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .divBlog :last-child {
@@ -399,11 +411,16 @@ span {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
+  width: 60%;
   margin-top: 5%;
+  border: 2px solid rgb(200, 203, 208);
+
   & img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .ligne1 {
