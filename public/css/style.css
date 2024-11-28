@@ -554,4 +554,26 @@ div .couleur {
   background-color: white;
   font-family: "Baloo Da 2";
   margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.last {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10%;
+}
+.iconMedia {
+  display: flex;
+  justify-content: center;
+  & .copy {
+    display: flex;
+    justify-content: flex-start;
+  }
+  & img {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+  }
 }
