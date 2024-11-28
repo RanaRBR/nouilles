@@ -547,10 +547,11 @@ div .couleur {
 #bouton4 {
   height: 40px;
   width: 160px;
-  margin-left: 45%;
+  margin-left: 50%;
   border-radius: 5px;
-  border-color: rgb(105, 90, 166);
+  border: 2px solid rgb(175, 159, 238);
+  color: rgb(125, 107, 197);
   background-color: white;
   font-family: "Baloo Da 2";
-  /* color: rgb(105, 90, 166); */
+  margin-top: 5%;
 }
