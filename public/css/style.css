@@ -423,19 +423,25 @@ span {
   border: 2px solid rgb(200, 203, 208);
 
   & img {
-    height: 280px;
-    width: 250px;
+    height: 398px;
+    width: 400px;
   }
 }
 
 .deuxCadres {
   display: block;
   justify-content: center;
-  align-items: center;
   align-content: center;
-  /* width: 80%; */
-  margin-left: 25%;
+  margin-left: 15%;
 }
+.cadre {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 400px;
+  width: 80%;
+}
+
 .ligne1 {
   display: block;
   justify-content: left;
@@ -453,7 +459,8 @@ span {
 
 .couleur {
   color: rgb(105, 90, 166);
-  text-align: left;
+  margin-right: 60%;
+  font-weight: lighter;
 }
 
 .preFooter {
