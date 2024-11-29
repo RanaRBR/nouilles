@@ -117,7 +117,6 @@ header {
 }
 
 .man {
-  width: 100%;
   display: flex;
   margin-left: 15%;
 }
@@ -128,12 +127,11 @@ header {
 }
 
 .pic img {
-  width: 30%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   height: 360px;
-  width: 360px;
+  width: 300px;
   margin-top: 20%;
 }
 
@@ -318,6 +316,7 @@ header {
   text-align: center;
   margin-top: 5%;
 }
+
 .portfolio3 {
   display: flex;
   justify-content: center;
@@ -326,10 +325,12 @@ header {
   text-align: center;
   gap: 30px;
 }
+
 .grandP {
   display: flex;
   justify-content: center;
   gap: 20px;
+
   & img {
     height: 280px;
     width: 280px;
@@ -345,6 +346,7 @@ header {
   /* width: 70%; */
   margin-top: 50px;
 }
+
 .imgPortfolio {
   & img {
     width: 300px;
@@ -380,6 +382,7 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
 .txtBleu {
   color: #685aa5;
   font-family: "arlonbold";
@@ -396,6 +399,7 @@ header {
   transform: none;
   z-index: 1;
 }
+
 .apresBan3 {
   display: block;
   text-align: center;
@@ -424,6 +428,7 @@ span {
 .moto {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
@@ -439,6 +444,7 @@ span {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
   padding: 2%;
@@ -453,6 +459,7 @@ span {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 28%;
   border: 2px solid rgb(200, 203, 208);
   padding: 2%;
@@ -668,9 +675,9 @@ div .couleur {
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
+  /* display: flex;
+  justify-content: center; */
+  margin-left: 40%;
   width: 25%;
   color: rgb(105, 90, 166);
   font-size: 2rem;
@@ -1079,14 +1086,12 @@ p:hover {
   }
 } */
 
-@media screen and (max-width: 576px) {
+@media (min-width: 425px) and (max-width: 768px) {
   body {
     margin: 0 auto;
-    background-size: contain;
     width: 100%;
 
     & nav {
-      width: 50%;
       height: 120px;
       margin: 0 auto;
       font-size: xx-small;
@@ -1104,26 +1109,351 @@ p:hover {
       }
     }
   }
-}
-/* 
-@media (max-width: 768px) {
-  header {
-    max-width: 80%;
+
+  .logo {
+    font-size: small;
+    margin-bottom: 5%;
   }
 
-  main {
-    padding: 10px;
-    font-size: 16px;
+  .entete h1 {
+    width: 100%;
+    /* display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    font-size: medium;
+    text-align: center;
+    margin-top: 10%;
   }
 
   #bouton {
-    width: 100%; /* Le bouton prend toute la largeur */
-/* padding: 15px;
-    font-size: 18px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    left: 10px;
   }
 
-  footer {
-    font-size: 14px;
-    padding: 5px;
+  & p:last-child {
+    font-size: large;
   }
-}  */
+
+  & .cv {
+    position: relative;
+    right: 20px;
+  }
+
+  & .ban {
+    font-size: xx-small;
+  }
+
+  .man {
+    display: block;
+    margin-left: 10%;
+  }
+
+  .pic img {
+    height: auto;
+    width: 120px;
+    margin-left: 20%;
+    margin-top: 12%;
+    margin-bottom: -5%;
+  }
+
+  .contenair p {
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+  }
+  .texte2 {
+    margin-left: 10%;
+  }
+  .divService {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .cv {
+    width: 60%;
+    position: relative;
+    left: 50px;
+  }
+
+  .flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    & .sapin {
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  .portfolio3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    & .imgPortfolio {
+      width: 50%;
+      justify-content: center;
+      margin-left: 27%;
+
+      & img {
+        justify-content: center;
+      }
+    }
+  }
+
+  & #message {
+    width: 60%;
+    height: 100px;
+  }
+
+  .grandeD {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+
+    & .moto,
+    .camion,
+    .fusee {
+      width: 50%;
+      display: flex;
+      margin-left: 25%;
+
+      & img {
+        justify-content: center;
+      }
+    }
+  }
+
+  .flexT {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+  }
+  /* .flexT:last-of-type {
+    margin-bottom: -20%;
+  } */
+  .apresBan4 {
+    margin-bottom: 20%;
+
+    & .temoin {
+      margin-top: -20%;
+    }
+  }
+
+  .hire {
+    width: 100%;
+    margin-bottom: 10%;
+
+    & .work p {
+      margin-bottom: 5%;
+    }
+  }
+  #bouton3 {
+    margin-left: 1%;
+  }
+
+  .texteF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: -15%;
+
+    & p {
+      margin-top: 40%;
+      font-size: 0.7rem;
+      text-align: center;
+    }
+
+    & .prenom {
+      font-size: small;
+      margin-bottom: 40%;
+    }
+  }
+
+  .avatar img {
+    position: absolute;
+    left: 10px;
+    margin-top: 80%;
+  }
+
+  & p {
+    font-size: small;
+    margin-bottom: 22%;
+  }
+  .divBlog {
+    margin-top: -13%;
+
+    & .blog {
+      margin-top: -20%;
+    }
+  }
+
+  .deuxCadres {
+    display: block;
+    margin-top: -8%;
+  }
+
+  .cadre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* margin-bottom: 50%; */
+    & .ligne1 {
+      margin-top: -5%;
+    }
+
+    & .ligne1 {
+      display: block;
+      font-size: 0.4rem;
+      margin-top: -10px;
+
+      & p {
+        font-size: 0.7rem;
+      }
+    }
+
+    & div > img {
+      height: 160px;
+      width: 288px;
+      margin-top: -15%;
+    }
+
+    .left {
+      margin-bottom: 0;
+    }
+  }
+
+  .cadre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50%;
+
+    & .ligne1 {
+      margin-top: -5%;
+    }
+
+    & .ligne2 {
+      display: block;
+      font-size: 0.4rem;
+      margin-top: 10%;
+
+      & p {
+        font-size: 0.7rem;
+      }
+    }
+
+    img {
+      height: 180px;
+      width: 390px;
+      margin-top: -20%;
+    }
+
+    .left {
+      margin-bottom: 0;
+    }
+  }
+  .preFooter {
+    margin: 0;
+  }
+
+  /* .comm p:first-of-type {
+      margin-top: -320px;
+    }
+  
+    .comm p:last-of-type {
+      margin-top: -120px;
+    } */
+  #bouton4 {
+    width: 120px;
+  }
+
+  .sub {
+    margin-right: 20%;
+    margin-top: 10%;
+  }
+  .navbar2 > a {
+    font-size: small;
+    & .logo {
+      font-size: small;
+    }
+  }
+  .last {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+  }
+  .copyright {
+    width: 40%;
+    font-size: small;
+  }
+
+  .copy {
+    width: 60%;
+    & img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .copy {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 60%;
+    /* & img {
+      height: 30px;
+      width: 30px; */
+  }
+  .last {
+    display: flex;
+    justify-content: space-around;
+    width: 710px;
+  }
+  /* .apresBan5 {
+    margin-bottom: -30%;
+  } */
+  .divBlog p:first-child {
+    margin-bottom: 10%;
+  }
+  .divBlog p:last-child {
+    margin-bottom: 20%;
+  }
+  .deuxCadres {
+    margin-top: -20%;
+    margin-bottom: 10%;
+  }
+  .apresBan5 {
+    margin-bottom: -30%;
+  }
+  .comm p:first-child {
+    margin-bottom: -10%;
+  }
+  .comm p:last-child {
+    margin-bottom: -10%;
+  }
+}
