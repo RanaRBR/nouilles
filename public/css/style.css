@@ -638,9 +638,9 @@ div .couleur {
   width: 40px;
   height: 40px;
 }
-/* portfolio */
 
-/* .imagesP img {
+/* 
+.imagesP img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -667,7 +667,7 @@ div .couleur {
   font-family: "Baloo Da 2";
   font-size: x-large;
   margin-bottom: 5px;
-} */
+}
 
 /* Lorsque hover */
 /* .imagesP :hover .overlay {
@@ -771,7 +771,7 @@ a:nth-child(4) {
 
 .navbar.open a:nth-child(3) {
   transform: rotate(-90deg);
-/* } */
+} */
 
 /* animation services */
 
@@ -825,7 +825,7 @@ a:nth-child(4) {
 }
 
 /* animation Portfolio fin */
-
+/* 
 .grandeP .divImage {
   position: relative;
   overflow: hidden;
@@ -866,7 +866,7 @@ a:nth-child(4) {
     height: 300px;
     width: 300px;
   }
-}
+} */
 /* 
 #picture img {
   width: 100%;
@@ -1060,3 +1060,73 @@ p:hover {
     padding: 5px;
   }
 }  */
+
+
+
+
+
+
+
+.portfolio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-top: 50px;
+
+}
+.imgPortfolio{
+
+  & img {
+      width: 300px;
+  }
+}
+
+.imgPortfolio {
+  position: relative;
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden; 
+}
+
+
+.imgPortfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block; 
+}
+
+
+.imgPortfolio .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(251, 250, 250, 0.8);
+  transform: translate(-50%, -50%); 
+  transition: 0.2s ; 
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.txtBleu {
+  color: #685aa5;
+  font-family: "arlonbold";
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+/* Lorsque hover */
+.imgPortfolio:hover .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none; 
+  z-index: 1;
+    
+}
